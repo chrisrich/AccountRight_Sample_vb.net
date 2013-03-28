@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0F82A90B-AF5A-46BC-B19B-0CEE75219569}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>
+    </RootNamespace>
+    <AssemblyName>VisualBasicSamples.Common</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Libraries\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompanyFileContext.vb" />
+    <Compile Include="Controllers\Base\BusinessController.vb" />
+    <Compile Include="Controllers\Base\ControllerBase.vb" />
+    <Compile Include="Controllers\Base\OAuthInfo.vb" />
+    <Compile Include="Controllers\Base\OAuthToken.vb" />
+    <Compile Include="Forms\CompanyFileList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompanyFileList.Designer.vb">
+      <DependentUpon>CompanyFileList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CompanyLogonForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CompanyLogonForm.Designer.vb">
+      <DependentUpon>CompanyLogonForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OAuthSetting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OAuthSetting.Designer.vb">
+      <DependentUpon>OAuthSetting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\OAuthServiceHelper.vb" />
+    <Compile Include="Helpers\StringHelper.vb" />
+    <Compile Include="Models\CompanyModels.vb" />
+    <Compile Include="Controllers\LibraryBrowserController.vb" />
+    <Compile Include="Models\PageItems.vb" />
+    <Compile Include="Properties\AssemblyInfo.vb" />
+    <Compile Include="SearchCriteria.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Forms\CompanyFileList.resx">
+      <DependentUpon>CompanyFileList.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\CompanyLogonForm.resx">
+      <DependentUpon>CompanyLogonForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OAuthSetting.resx">
+      <DependentUpon>OAuthSetting.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\VisualBasicSamples.Common.Models.CompanyModel.datasource" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>PHP OAUTH sample app by MYOB-Technology</title>
+    <title>VB.NET sample Desktop Application</title>
 
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet"  type="text/css" media="screen" href="css/bootstrap.css" />
@@ -293,9 +293,9 @@ div#footer {
 </div>
     <div class="wrapper">
       <header>
-        <h1>Accountright sample vb.net</h1>
-        <p></p>
-
+        <h1>VB.NET</h1>
+        <p>Desktop sample app demonstrating OAuth</p>
+		<p>AccountRight API<p/> 
         <p class="view"><a href="https://github.com/MYOB-Technology/AccountRight_Sample_vb.net">View the Project on GitHub <small>MYOB-Technology/AccountRight_Sample_vb.net</small></a></p>
 
 
@@ -306,33 +306,38 @@ div#footer {
         </ul>
       </header>
       <section>
-        <h3>Welcome to GitHub Pages.</h3>
+        <h3>AccountRight API - VB.NET desktop app</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>
+<ul>
+	<li>A simple company file browser</li>
+	<li>Use localhost to run locally</li>
+	<li>Add your API key and secret to demo the OAuth workflow</li>
+	<li>Return a list of accounts for a particular company file</li>
+</ul>
+<h3>Why OAuth?</h3>
+        <p>The AccountRight Live API uses a couple of steps of authentication to ensure that people working with our customers company data files are trusted.</p>
+        <p><strong>The steps are:</strong></p>
+        <ul>
+          <li>First: as a developer you require an <strong>API KEY</strong> and <strong>SECRET</strong></li>
+          <li>Next: your app needs to allow the user to grant you permission to access their company files</li>
+          <li>Next: you need to get an Access Token (and refresh token) from the MYOB OAUTH server</li>
+          <li>Lastly: you use the token to request company files, which the user needs to log into individually</li>
+        </ul>
+		<h3>Requirements</h3>
+		<ul>
+		<li>Visual Studio 2010 with Visual Basic</li>
+		</ul>
+<h3>Getting up and running</h3>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Firstly unzip to a folder and load up the solution file in the VBSamples.Account folder, Before even building this you can execute the program from the bin\debug folder</p>
+<p>We have put together a guide of sorts to help assist in getting the most out of this sample <a href="http://myobapi.tumblr.com/post/48331861276/a-step-by-step-guide-to-our-vb-net-desktop-sample" target="_blank">more details here</a></p>
 
 <h3>Support or Contact</h3>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>            
+<p>Unfortunately code is not documented at this stage but will be added as we evolve the sample. However you can always contact us through our Community Forums or Twitter account and see if we can help.</p>
+      </section>
+	  <div class='footer' id="footer">
             <div class="footerFour row">
                 <div class="footer-box footer-one span3">
                     <h3>API</h3>

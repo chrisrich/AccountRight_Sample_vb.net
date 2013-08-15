@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>VB.Net sample app for MYOB AccountRight Live API</title>
+  <title>VB.Net sample app using SDK for MYOB AccountRight Live API</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <!-- sort out IE -->
@@ -184,7 +184,7 @@ li {
   <div class="logoTop">
     <h1><a href="http://developer.myob.com" class="apiLogo"><img src="http://myob-technology.github.io/myob_accountright_sample_nodejs/img/myobapi-logo.png" /></a></h1>
     <blockquote>
-     An example VB.Net app
+     An example VB.Net app using our .Net SDK
     </blockquote>
   </div>
   <div class="quickLinks">
@@ -211,37 +211,31 @@ li {
   <!-- begin article -->
   <article id="[ID]" class="post">
     <h1>VB.Net Sample App</h1>
-    <p>Desktop sample app demonstrating OAuth in vb.net</p>
-     <h3>AccountRight API - VB.NET desktop app</h3>
+    <p>Desktop sample app demonstrating accessing the AccountRight Live API using the SDK in vb.net</p>
+     <h3>AccountRight Live API - VB.NET desktop app</h3>
 
 <p>
 <ul>
-  <li>A simple company file browser</li>
-  <li>Use localhost to run locally</li>
-  <li>Add your API key and secret to demo the OAuth workflow</li>
-  <li>Return a list of accounts for a particular company file</li>
+  <li>Uses the new .Net SDK released with version 2 of the API</li>
+  <li>Navigates available files on local and cloud server</li>
+  <li>Manages OAuth login (note: SDK manages refreshing of tokens!)</li>
+  <li>Demonstrates use of paging through listing of invoices</li>
+  <li>Shows how to create new service invoices</li>
 </ul>
-<h3>Why OAuth?</h3>
-        <p>The AccountRight Live API uses a couple of steps of authentication to ensure that people working with our customers company data files are trusted.</p>
-        <p><strong>The steps are:</strong></p>
-        <ul>
-          <li>First: as a developer you require an <strong>API KEY</strong> and <strong>SECRET</strong></li>
-          <li>Next: your app needs to allow the user to grant you permission to access their company files</li>
-          <li>Next: you need to get an Access Token (and refresh token) from the MYOB OAUTH server</li>
-          <li>Lastly: you use the token to request company files, which the user needs to log into individually</li>
-        </ul>
     <h3>Requirements</h3>
     <ul>
     <li>Visual Studio 2010 with Visual Basic</li>
+    <li>To access local server: AccountRight 2013.3 and API </li>
+    <li>To access cloud server: MYOBApi developer key and secret</li>
     </ul>
 <h3>Getting up and running</h3>
 
-<p>Firstly unzip to a folder and load up the solution file in the VBSamples.Account folder, Before even building this you can execute the program from the bin\debug folder</p>
-<p>We have put together a guide of sorts to help assist in getting the most out of this sample <a href="http://myobapi.tumblr.com/post/48331861276/a-step-by-step-guide-to-our-vb-net-desktop-sample" target="_blank">more details here</a></p>
+<p>Unzip source code to a local folder and open the solution file. Install the MYOB.AccountRight.API.SDK NuGet package (i.e. type “Install-Package MYOB.AccountRight.API.SDK” in the package manager console), then compile and run. To use the cloud service with the sample change the placeholder Key and Secret in the code with your own.</p>
+<p>The following blog post provides more details about getting started with the sample: <a href="http://myobapi.tumblr.com/post/58280200848/vb-net-sample-using-the-new-accountright-api-sdk" target="_blank">more details here</a></p>
 
 <h3>Support or Contact</h3>
 
-<p>Unfortunately code is not documented at this stage but will be added as we evolve the sample. However you can always contact us through our Community Forums or Twitter account and see if we can help.</p>
+<p>You can contact us through our Community Forums or Twitter account and see if we can help.</p>
 
   </article>
   <!-- end article -->
